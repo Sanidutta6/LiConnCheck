@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "LiConnCheck",
+    "version": "1.4",
+    "description": "To check connection status of sent linkedin connections in bulk",
+    "icons": {
+        "16": "assets/logo-CkKSCLqS.png",
+        "48": "assets/logo-CkKSCLqS.png",
+        "128": "assets/logo-CkKSCLqS.png"
+    },
+    "action": {
+        "default_title": "Click to open panel"
+    },
+    "side_panel": {
+        "default_path": "index.html"
+    },
+    "permissions": [
+        "sidePanel",
+        "tabs",
+        "activeTab",
+        "scripting",
+        "webNavigation"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "*://*/*"
+    ]
+}
